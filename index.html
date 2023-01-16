@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | 3-column preview card component</title>
+  <style>     
+ @font-face {
+    font-family: 'head';
+    src: url(head.ttf);
+    }
+    @font-face {
+    font-family: 'data';
+    src: url(data.otf);
+    }
+
+   .upper_flexbox{
+   position:absolute;
+   top:10vh;
+   left:13vw;
+    display:flex;
+    flex-direction: row;  
+  }
+  .upper_flexbox > canvas{
+
+    height:80vh;
+   width:25vw;
+   border-radius: 5px;
+  }
+
+  .icon_flex{
+   position: absolute;
+   display:flex;
+   flex-flow: row;
+   top:16vh;
+   left:-3vw;
+  }
+  .icon_flex > img{
+    margin-left:20vw;
+    height:7vh;
+  }
+  
+  .heading_flex{
+    position: absolute;
+   display:flex;
+   flex-flow: row;
+   top:22vh;
+   left:-3vw;
+  }
+  .heading_flex > p{
+    margin-left:19.4vw;
+    font-family: head;
+    font-size:3.5vw;
+    color:white;
+  }
+  
+  .data_flex{
+    position: absolute;
+   display:flex;
+   flex-flow: row;
+   top:40vh;
+   left:11.3vw;
+   
+  }
+  .data_flex > p{
+    width:20vw;
+    margin-left:5vw;
+    font-family: data;
+    font-size:1.3vw;
+    color:white;
+  }
+  .button_flex{
+    position: absolute;
+   display:flex;
+   flex-flow: row;
+   top:72vh;
+   left:2.7vw;
+  }
+  .button_flex > button{
+    padding:0.5vw;
+    width:10vw;
+    border-color:azure;
+    border-style: solid;
+    border-radius:40px;
+    margin-left:15vw;
+    font-family: data;
+    font-size:1.3vw;
+    color:white;
+    background-color:rgba(255, 255, 255, 0);
+  }
+  
+
+  </style>
+</head>
+<body>
+  <div class="upper_flexbox">
+    <canvas style="background-color:#e28525"></canvas>
+    <canvas style="background-color:#016972"></canvas>
+    <canvas style="background-color:#00403f"></canvas>
+  </div>
+
+  <div class="icon_flex">
+  <img src="images/icon-sedans.svg">
+  <img style="margin-left:18.3vw;" src="images/icon-suvs.svg">
+  <img src="images/icon-luxury.svg">
+  </div>
+
+  <div class="heading_flex">
+    <p>SEDANS</p>
+    <p style="margin-left:17vw;">SUVs</p>
+    <p style="margin-left:20vw;"> LUXURY</p>
+  </div>
+
+  <div class="data_flex">
+    <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+  or on your next road trip.</p>
+    <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+      and off-road adventures.</p>
+    <p>Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+      rental and arrive in style.</p>
+  </div>
+
+  <div class="button_flex">
+  <button>Learn More</button>
+  <button>Learn More</button>
+  <button>Learn More</button>
+  </div>
+  
+</body>
+</html>
